@@ -26,7 +26,7 @@ $(document).ready(function(){
 		}
 	});
     
-    });
+	});
 
 	/* scroll cambio de menu*/
 	window.onscroll = function()

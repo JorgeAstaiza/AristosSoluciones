@@ -1,7 +1,10 @@
 //-----------------
 // import
 //-----------------
-
+@font-face {
+    font-family: "Nanmi-Bold";
+    src: url("/css/Nanami-Bold.otf");
+  }
 //-----------------
 // variables
 //-----------------
@@ -19,7 +22,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .bienvenidos{
-    background-image: url("../images/fondo.png");
+    background-image: url("/images/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
@@ -239,8 +242,9 @@ li.dropdown {
 }
 	
 .sabermas_container{
-    margin-top: 85px;
-    margin-left: 10px;
+    margin-top: 26px;
+    margin-left: 45px;
+    margin-bottom: 37px;
 }
 .footer{
     background-color: #1a1a1a;
@@ -990,3 +994,242 @@ modificaciones
     color: white;
 }
 
+
+/*-/////////////////////////
+ESTILOS PARA PAGINAS DE SERVICIOS
+//////////////////////////-*/
+
+.container-servicio{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 550px 400px;
+    grid-column-gap: 50px;
+}
+.tituloServicio{
+    margin-top: 150px;
+    text-align: center;
+}
+.container-servicio h1{
+    grid-column: 1.5 / 3;
+}
+.container-servicio li h2{
+    font-size: 25px;
+}
+.objetivoServicio{
+    grid-column: 1 / 3;
+    padding: 0px 100px;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.container-servicio figure{
+    align-self: center;
+}
+.imgGerProy{
+    width: 100%;
+}
+
+/*//////////////////////
+ESTILOS SERVICIO COMUNICACION DIGITAL
+*/////////////////////////
+.servicioComDig{
+    margin-top: 124px;
+}
+.servicioComDig h2{
+    color: white;
+    font-family: 'Baloo', cursive;
+}
+.servicioComDig li{
+    font-family: 'Nanami-Bold';
+}
+.imgComDig{
+    width: 60%;
+}
+.contenedorImg{
+    text-align: center;
+    position: relative;
+    display: block;
+}
+.texto{
+    position: absolute;
+    display: block;
+    width: 28%;
+    top: 300px;
+    left: 677px;
+}
+.texto2{
+    position: absolute;
+    display: block;
+    width: 17%;
+    top: 612px;
+    left: 330px;
+}
+.texto2 h2{
+    margin-bottom: 33px;
+}
+.texto3{
+    position: absolute;
+    display: block;
+    width: 17%;
+    top: 623px;
+    left: 710px;
+}
+.texto4{
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: 911px;
+    left: 357px
+}
+.texto4 ul{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+.texto5{
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: 872px;
+    left: 675px
+}
+.texto6{
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: 1139px;
+    left: 340px;
+}
+.texto7{
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: 1116px;
+    left: 693px;
+}
+.texto8{
+    position: absolute;
+    display: block;
+    width: 24%;
+    top: 1395px;
+    left: 340px;
+}
+
+@media (max-width: 544px){
+    .imgComDig {
+        width: 100%;
+    }
+    .servicioComDig {
+        margin-top: 39px;
+    }
+    .texto{
+        width: 48%;
+        top: 94px;
+        left: 187px;
+        font-size: 10px;
+    }
+    .texto2{
+        width: 39%;
+        top: 255px;
+        left: 7px;
+    }
+    .texto2 h2{
+        font-size: 18px;
+        margin: 0;
+    }
+    .texto2 li{
+        font-size: 10px;
+    }
+    .texto2 ul{
+        padding-left: 19px;
+    }
+    .texto3{
+        width: 38%;
+        top: 236px;
+        left: 162px;
+    }
+    .texto3 h2{
+        font-size: 18px;
+        margin-left: 24px;
+        margin-bottom: 0;
+    }
+    .texto3 li{
+        font-size: 10px;
+    }
+    .texto4 {
+        width: 43%;
+        top: 386px;
+        left: 35px;
+    }
+    .texto4 h2{
+        font-size: 18px;
+        margin: 0;
+    }
+    .texto4 ul {
+        margin-left: 19px;
+        margin-top: 3px;
+    }
+    .texto4 li{
+        font-size: 13px;
+    }
+    .texto5 {
+        width: 44%;
+        top: 364px;
+        left: 162px;
+    }
+    .texto5 h2{
+        font-size: 18px;
+        margin: 0;
+    }
+    .texto5 ul{
+        margin-left: -14px;
+    }
+    .texto5 li{
+        font-size: 10px;
+    }
+    .texto6 {
+        width: 50%;
+        top: 485px;
+        left: 8px;
+    }
+    .texto6 h2{
+        font-size: 18px;
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+    .texto6 li{
+        font-size: 10px;
+    }
+    .texto7 {
+        width: 50%;
+        top: 472px;
+        left: 177px;
+    }
+    .texto7 h2{
+        font-size: 18px;
+        margin: 0;
+    }
+    .texto7 li{
+        font-size: 10px;
+    }
+    .texto7 ul{
+        padding-left: 19px;
+    }
+    .texto8 {
+        width: 53%;
+        top: 594px;
+        left: 17px;
+    }
+    .texto8 h2{
+        font-size: 18px;
+        margin: 0;
+    }
+    .texto8 li{
+        font-size: 10px;
+    }
+    .texto8 ul{
+        margin-left: -21px;
+    }
+}
+@media (min-width: 768px){
+
+}
