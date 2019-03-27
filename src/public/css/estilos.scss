@@ -999,34 +999,64 @@ modificaciones
 ESTILOS PARA PAGINAS DE SERVICIOS
 //////////////////////////-*/
 
-.container-servicio{
+/*.container-servicio{
     display: grid;
     justify-content: center;
     grid-template-columns: 550px 400px;
     grid-column-gap: 50px;
+}*/
+.container-servicio{
+    width: 80%;
+    margin: 0 auto;
+}
+.prueba{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+.prueba figure{
+    width: 45%;
+    margin-left: 40px;
+}
+.prueba ul{
+    width: 50%;
 }
 .tituloServicio{
     margin-top: 150px;
     text-align: center;
 }
-.container-servicio h1{
+/*.container-servicio h1{
     grid-column: 1.5 / 3;
-}
+}*/
 .container-servicio li h2{
     font-size: 25px;
 }
-.objetivoServicio{
+/*.objetivoServicio{
     grid-column: 1 / 3;
     padding: 0px 100px;
     margin-bottom: 30px;
     font-size: 1.3rem;
     text-align: justify;
-}
+}*/
 .container-servicio figure{
     align-self: center;
 }
 .imgGerProy{
     width: 100%;
+}
+@media (max-width: 544px){
+    .prueba{
+        flex-direction: column;
+    }
+    .prueba ul{
+        width: 100%;
+    }
+    .prueba figure{
+        display: none;
+    }
+    .tituloServicio{
+        margin-top: 100px;
+    }
 }
 
 /*//////////////////////
